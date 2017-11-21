@@ -1,0 +1,493 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: Ubuntu;
+  vertical-align: baseline;
+  text-decoration: none;
+  list-style-type:none;
+}
+
+header {
+  background-image: url(images/chicago.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 35em;
+  width: 100%;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+header nav {
+  float: left;
+  background-color: black;
+  width: 100%;
+  position: fixed;
+}
+
+nav .menu-input {
+  float: right;
+}
+.main-menu li {
+  float: left;
+}
+
+
+.main-menu li a{
+  color: #fff;
+  padding: 12px 24px;
+  display: inline-block;
+}
+
+.main-menu li a:hover{
+  color: #000;
+  background-color: #ccc;
+  padding: 12px 24px;
+  display: inline-block;
+}
+.main-menu li:last-child{
+  position: relative;
+}
+.main-menu li:last-child:hover .menu-dropdown {
+  display: flex;
+}
+.menu-dropdown {
+  flex-direction: column;
+  position: absolute;
+  background-color: #fff;
+  display: none;
+}
+.menu-dropdown li {
+ margin: 0;
+}
+.menu-dropdown a {
+  color: black !important;
+  display: block !important;
+}
+
+.hamburger {
+  position: relative;
+  height: 42px;
+  width: 42px;
+  display: flex;
+}
+.hamburger .fa {
+  color: #fff;
+  margin: auto;
+}
+
+.hamburger input ,
+.hamburger ul {
+  display: none;
+}
+
+#fa-bars {
+  display: none;
+}
+
+/*=============================
+        HEADER CONTENT
+=============================*/
+
+.header-content {
+  position: absolute;
+  top: 25em;
+  left: 40vw;
+  text-align: center;
+  line-height: 50px;
+}
+
+.header-content h1 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.header-content p {
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+/*============================
+          THE BAND
+============================*/
+
+.wrapper-item {
+  padding: 64px 0;
+  text-align: center;
+}
+
+.wrapper-item h2 {
+  letter-spacing: 4px;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+.title-tour{
+  color: #fff;
+}
+.wrapper-item p {
+  font-style: italic;
+  font-size: 15px;
+  color: #8A8A8A;
+  margin: 15px 0;
+  display: block;
+}
+
+.detail-band {
+  margin: 15px 0;
+  text-align: justify;
+}
+
+.detail-band p {
+  color: #370707;
+}
+
+.band-member-group {
+  display: flex;
+  flex-direction: row;
+  padding: 32px 0;
+}
+
+.band-member {
+  width: calc(100%/3);
+  /*display: block;*/
+}
+
+.band-member h2 {
+  font-size: 15px;
+  text-align: center;
+}
+.band-avatar img {
+  width: 60%;
+  margin-bottom: 16px;
+  border-radius: 4px;
+}
+
+/*=========================
+      TOUR
+=========================*/
+
+.tour {
+  background-color: black;
+}
+
+.tourday{
+  background-color: #fff;
+  text-align: left;
+  margin: 30px 0;
+}
+
+.tourday li {
+  border-bottom: 1px solid #ddd;
+  padding: 8px 16px;
+}
+
+.sold-out {
+  background-color: #f44336;
+  color: #fff;
+  margin-left: 16px;
+  display: inline-block;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: center;
+  font-weight: 300;
+}
+
+.num-tour-day {
+  float: right;
+  margin-right: 16px!important;
+  border-radius: 50%;
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  padding: 0 8px;
+  text-align: center;
+}
+
+.tour-plane {
+  display: flex;
+  flex-direction: row;
+}
+
+.plane-item {
+  width: calc(100%/3);
+  background-color: #fff;
+  margin: 0 8px;
+  margin-bottom: 16px;
+}
+
+.plane-item-img img {
+  width: 100%;
+}
+
+.plane-item-img img:hover {
+  width: 100%;
+  opacity: 0.6;
+}
+
+.plane-item-content {
+  text-align: left;
+  padding: 0 16px;
+  margin: 15px 0;
+}
+
+.plane-item-content p {
+  margin:15px 0;
+  display: inline-block;
+}
+.plane-item-content a {
+  background-color: black;
+  color: #fff;
+  padding: 8px 16px;
+  display: inline-block;
+  font-weight: 200;
+}
+
+.plane-item-content a:hover {
+  background-color: #ccc;
+  color: black;
+  padding: 8px 16px;
+  display: inline-block;
+  font-weight: 200;
+}
+
+/*==========================
+        CONTACT
+==========================*/
+.contact-content {
+  padding: 32px 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-address {
+  text-align: left;
+}
+
+.contact-address p {
+  font-size: 18px;
+  color: black;
+
+}
+
+.form-messages {
+  text-align: left;
+}
+
+.input-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-messages input {
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.name-person input[type="text"]:first-child{
+  margin-right: 10px;
+}
+
+.input-submit {
+  width: 20%;
+}
+
+.input-submit input {
+  border: none;
+  background: none;
+  background-color: black;
+  color: #fff;
+  font-size: 13px;
+}
+
+.input-submit input:hover {
+  border: none;
+  background: none;
+  background-color: #ccc;
+  color: black;
+  font-size: 13px;
+}
+/*=============================
+          MAP
+=============================*/
+.map iframe {
+  width: 100%;
+  height: 300px;
+}
+/*=============================
+        FOOTER
+=============================*/
+footer {
+  margin: 64px 16px;
+  text-align: center;
+}
+
+footer ul {
+  display: inline-block;
+}
+.clearfix {
+  clear: both;
+}
+
+footer li {
+  float: left;
+  font-size: 23px;
+  padding: 5px;
+}
+
+footer li a {
+  color: #9F9F9F;
+}
+
+footer p {
+  font-size: 15px;
+  margin: 15px 0;
+  color: #9F9F9F;
+}
+/*=========================
+        RESPONSIVE
+=========================*/
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  .header-content {
+    display: none;
+  }
+  .main-menu li {
+    display: none;
+  }
+
+  .main-menu li:first-child {
+    display: block;
+  }
+
+  #fa-search {
+    display: none;
+  }
+
+  #fa-bars {
+    display: block;
+  }
+ /* =======================
+      DROPDOWN MENU
+  =======================*/
+  .hamburger {
+    position: relative;
+    height: 42px;
+    width: 42px;
+    display: flex;
+  }
+
+  .hamburger .fa {
+    color: #fff;
+    margin: auto;
+  }
+
+  .hamburger input {
+    display: none;
+  }
+
+  .hamburger input:checked + ul {
+    /*transform: translateY(100px);*/
+    display: block;
+  }
+
+  .hamburger ul {
+    display: none;
+    padding: 0;
+    list-style: none;
+    background-color: black;
+    position: absolute;
+    top: 42px;
+    right: 0;
+    width: 100vw;
+  }
+
+  .hamburger li {
+    padding: 12px 24px;
+  }
+
+  .hamburger a {
+    color: #fff;
+    padding-left: 15px;
+  }
+
+  .hamburger li a:hover {
+    background-color: #fff;
+    color: black;
+    display: flex;
+    padding: 12px 0 12px 15px;
+  }
+  /*==========================
+          BAND
+  ==========================*/
+  .band-member-group {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 0;
+  }
+
+  .band-member {
+    width: 100%;
+  }
+
+  .band-member h2 {
+    font-size: 15px;
+    text-align: center;
+  }
+  .band-avatar img {
+    width: 60%;
+    margin-bottom: 16px;
+    border-radius: 4px;
+  }
+
+  /*=======================
+          TOUR DAY
+  =======================*/
+  .tour-plane {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .plane-item {
+    width: 100%;
+    background-color: #fff;
+    margin: 0;
+    margin-bottom: 16px;
+  }
+
+ /* =======================
+        CONTACT
+  =======================*/
+  .contact-content {
+    padding: 32px 0;
+    display: flex;
+    flex-direction: column;
+  }
+}
