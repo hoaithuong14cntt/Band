@@ -45,10 +45,10 @@ header nav {
 nav .menu-input {
   float: right;
 }
+
 .main-menu li {
   float: left;
 }
-
 
 .main-menu li a{
   color: #fff;
@@ -62,21 +62,26 @@ nav .menu-input {
   padding: 12px 24px;
   display: inline-block;
 }
+
 .main-menu li:last-child{
   position: relative;
 }
+
 .main-menu li:last-child:hover .menu-dropdown {
   display: flex;
 }
+
 .menu-dropdown {
   flex-direction: column;
   position: absolute;
   background-color: #fff;
   display: none;
 }
+
 .menu-dropdown li {
- margin: 0;
+  margin: 0;
 }
+
 .menu-dropdown a {
   color: black !important;
   display: block !important;
@@ -88,12 +93,13 @@ nav .menu-input {
   width: 42px;
   display: flex;
 }
+
 .hamburger .fa {
   color: #fff;
   margin: auto;
 }
 
-.hamburger input ,
+.hamburger input,
 .hamburger ul {
   display: none;
 }
@@ -142,9 +148,11 @@ nav .menu-input {
   margin-bottom: 20px;
   display: inline-block;
 }
-.title-tour{
+
+.title-tour {
   color: #fff;
 }
+
 .wrapper-item p {
   font-style: italic;
   font-size: 15px;
@@ -170,13 +178,13 @@ nav .menu-input {
 
 .band-member {
   width: calc(100%/3);
-  /*display: block;*/
 }
 
 .band-member h2 {
   font-size: 15px;
   text-align: center;
 }
+
 .band-avatar img {
   width: 60%;
   margin-bottom: 16px;
@@ -255,6 +263,7 @@ nav .menu-input {
   margin:15px 0;
   display: inline-block;
 }
+
 .plane-item-content a {
   background-color: black;
   color: #fff;
@@ -287,7 +296,6 @@ nav .menu-input {
 .contact-address p {
   font-size: 18px;
   color: black;
-
 }
 
 .form-messages {
@@ -379,6 +387,7 @@ footer p {
   .header-content {
     display: none;
   }
+
   .main-menu li {
     display: none;
   }
@@ -394,6 +403,7 @@ footer p {
   #fa-bars {
     display: block;
   }
+
  /* =======================
       DROPDOWN MENU
   =======================*/
@@ -414,7 +424,6 @@ footer p {
   }
 
   .hamburger input:checked + ul {
-    /*transform: translateY(100px);*/
     display: block;
   }
 
@@ -444,6 +453,7 @@ footer p {
     display: flex;
     padding: 12px 0 12px 15px;
   }
+
   /*==========================
           BAND
   ==========================*/
