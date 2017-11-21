@@ -370,6 +370,10 @@ footer li a {
   color: #9F9F9F;
 }
 
+footer li a:hover {
+  color: rgba(159, 159, 159, 0.65);
+}
+
 footer p {
   font-size: 15px;
   margin: 15px 0;
